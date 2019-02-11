@@ -1,7 +1,7 @@
 ---
 description: >-
-  .gitignore.io is a web service designed to help you create .gitignore files
-  for your Git repositories. The site has a graphical and command line method of
+  Gitignore.io is a web service designed to help you create .gitignore files for
+  your Git repositories. The site has a graphical and command line method of
   creating a .gitignore for your operating syst
 ---
 
@@ -15,7 +15,5 @@ description: >-
 
 [Install Local Server](install/local-server.md)
 
-## Used By
-
-![](.gitbook/assets/companies.svg)
+![These companies use gitignore.io](.gitbook/assets/companies.svg)
 
