@@ -7,13 +7,7 @@ description: >-
 
 # gitignore.io
 
-[Install Command Line](install/command-line.md)
-
-[Install IDE Extension](install/editor-extension.md)
-
-[Install Client Application](install/client-application.md)
-
-[Install Local Server](install/local-server.md)
+{% embed url="https://vimeo.com/204803019" caption="gitignore.io video tutorial" %}
 
 ![These companies use gitignore.io](.gitbook/assets/companies.svg)
 
