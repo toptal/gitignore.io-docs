@@ -13,4 +13,9 @@
 
 * [Command Line](use/command-line.md)
 * [Advanced Command Line](use/advanced-command-line.md)
+* [API](use/api.md)
+
+## Design
+
+* [Logo](design/logo.md)
 
