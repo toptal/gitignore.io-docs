@@ -5,8 +5,8 @@
 ## Install
 
 * [Command Line](install/command-line.md)
-* [Editor Extensions](install/editor-extension.md)
-* [Client Applications](install/client-application.md)
+* [Editor Extensions](install/editor-extensions.md)
+* [Client Applications](install/client-applications.md)
 * [Local Server](install/local-server.md)
 
 ## Use
