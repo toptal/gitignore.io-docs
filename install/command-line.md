@@ -9,62 +9,62 @@ description: >-
 
 ### Git
 
-Bash
+#### Bash
 
 ```bash
 git config --global alias.ignore \
-'!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'
+'!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi'
 ```
 
 ### Linux
 
-Bash
+#### Bash
 
 ```bash
-echo "function gi() { curl -L -s https://www.gitignore.io/api/\$@ ;}" >> \
+echo "function gi() { curl -sL https://www.gitignore.io/api/\$@ ;}" >> \
 ~/.bashrc && source ~/.bashrc
 ```
 
-Zsh
+#### Zsh
 
 ```bash
-echo "function gi() { curl -L -s https://www.gitignore.io/api/\$@ ;}" >> \
+echo "function gi() { curl -sLw "\n" https://www.gitignore.io/api/\$@ ;}" >> \
 ~/.zshrc && source ~/.zshrc
 ```
 
-Fish
+#### Fish
 
 ```bash
-printf "function gi\n\tcurl -L -s https://www.gitignore.io/api/\$argv\nend\n" > \
+printf "function gi\n\tcurl -sL https://www.gitignore.io/api/\$argv\nend\n" > \
 ~/.config/fish/functions/gi.fish
 ```
 
 ### macOS
 
-Bash
+#### Bash
 
 ```bash
-echo "function gi() { curl -L -s https://www.gitignore.io/api/\$@ ;}" >> \
+echo "function gi() { curl -sL https://www.gitignore.io/api/\$@ ;}" >> \
 ~/.bash_profile && source ~/.bash_profile
 ```
 
-Zsh
+#### Zsh
 
 ```bash
-echo "function gi() { curl -L -s https://www.gitignore.io/api/\$@ ;}" >> \
+echo "function gi() { curl -sLw "\n" https://www.gitignore.io/api/\$@ ;}" >> \
 ~/.zshrc && source ~/.zshrc
 ```
 
-Fish
+#### Fish
 
 ```bash
-printf "function gi\n\tcurl -L -s https://www.gitignore.io/api/\$argv\nend\n" > \
+printf "function gi\n\tcurl -sL https://www.gitignore.io/api/\$argv\nend\n" > \
 ~/.config/fish/functions/gi.fish
 ```
 
 ### Windows
 
-PowerShell v3 Script
+#### PowerShell v3 Script
 
 ```bash
 #For PowerShell v3
@@ -78,7 +78,7 @@ Function gig {
 }
 ```
 
-PowerShell v2 Script
+#### PowerShell v2 Script
 
 ```bash
 #For PowerShell v2
