@@ -2,7 +2,7 @@
 description: Clients maintained by third-party developers
 ---
 
-# Client Application
+# Client Applications
 
 ### [Go](https://github.com/Gnouc/gogi) — [Cuong Manh Le](https://github.com/Gnouc)
 

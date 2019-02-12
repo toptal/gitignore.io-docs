@@ -2,7 +2,7 @@
 description: Tools or extensions maintained by third-party developers different editors.
 ---
 
-# Editor Extension
+# Editor Extensions
 
 ### [Neovim](https://github.com/fszymanski/fzf-gitignore) — [Filip Szymański](https://github.com/fszymanski)
 
