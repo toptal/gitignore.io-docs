@@ -39,3 +39,9 @@ pip install ignr
 cargo install git-ignore-generator
 ```
 
+### [.NET Core](https://github.com/liammoat/dotnet-giio) — [Liam Moat](https://github.com/liammoat)
+Before you can install ```giio``` you will need to download and install .NET Core from [dot.net](https://dot.net). Install ```giio``` as a global tool:
+
+```bash
+dotnet tool install --global dotnet-giio
+```
