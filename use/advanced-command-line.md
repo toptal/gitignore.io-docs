@@ -76,6 +76,21 @@ _gitignoreio () {
 compdef _gitignoreio gi
 ```
 
+### @zubin
+
+Provides completion for fish
+
+```bash
+complete -f -c git -n '__fish_git_using_command ignore' -a '(__fish_print_gitignore_list)'
+
+function __fish_print_gitignore_list
+if ! set -q __FISH_PRINT_GITIGNORE_LIST
+   set -g __FISH_PRINT_GITIGNORE_LIST (curl -sL https://www.gitignore.io/api/list)
+end
+echo $__FISH_PRINT_GITIGNORE_LIST | string split ","
+end
+```
+
 ### \*\*\*\*[**@Phoenix09**](https://github.com/Phoenix09)\*\*\*\*
 
 Improved git alias `tee` to `.gitignore` and accept multiple parameters
