@@ -76,7 +76,7 @@ _gitignoreio () {
 compdef _gitignoreio gi
 ```
 
-### @zubin
+### [**@z**ubin](https://github.com/zubin)\*\*\*\*
 
 Provides completion for fish
 
