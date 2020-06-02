@@ -19,7 +19,8 @@ gi linux,java
 
 {% tab title="Response" %}
 ```text
-# Created by https://www.gitignore.io/api/linux,java
+# Created by https://www.toptal.com/developers/gitignore/api/linux,java
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,java
 
 ### Java ###
 # Compiled class file
@@ -62,7 +63,7 @@ hs_err_pid*
 .nfs*
 
 
-# End of https://www.gitignore.io/api/linux,java
+# End of https://www.toptal.com/developers/gitignore/api/linux,java
 ```
 {% endtab %}
 {% endtabs %}

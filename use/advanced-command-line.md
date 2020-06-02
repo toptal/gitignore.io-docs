@@ -20,7 +20,7 @@ function gi() (
         fi
     done
     IFS=,
-    curl "${curl_args[@]}" http://gitignore.io/api/"${gi_args[*]}"
+    curl "${curl_args[@]}" https://www.toptal.com/developers/gitignore/api/"${gi_args[*]}"
 )
 ```
 
@@ -30,9 +30,9 @@ Adds a check to see if curl or wget is installed.
 
 ```bash
 if hash curl; then
-    curl "${curl_args[@]}" http://gitignore.io/api/"${gi_args[*]}"
+    curl "${curl_args[@]}" https://www.toptal.com/developers/gitignore/api/"${gi_args[*]}"
 elif hash wget; then
-    wget -O- "${curl_args[@]}" http://gitignore.io/api/"${gi_args[*]}"
+    wget -O- "${curl_args[@]}" https://www.toptal.com/developers/gitignore/api/"${gi_args[*]}"
 else
     echo "please install curl or wget to run this command" >&2
     exit 1
@@ -44,7 +44,7 @@ fi
 Bash one-liner
 
 ```bash
-function gi { curl http://www.gitignore.io/api/"$(IFS=, ; echo "$*")"; }
+function gi { curl https://www.toptal.com/developers/gitignore/api/"$(IFS=, ; echo "$*")"; }
 ```
 
 ### [**@SantoshSrinivas79**](https://github.com/SantoshSrinivas79)\*\*\*\*
@@ -53,7 +53,7 @@ Create a file for the function using vim ~/.config/fish/functions/gi.fish and en
 
 ```text
 function gi
-  curl -L -s https://www.gitignore.io/api/$argv;
+  curl -L -s https://www.toptal.com/developers/gitignore/api/$argv;
 end
 ```
 
@@ -62,10 +62,10 @@ end
 Provides completion for zsh
 
 ```bash
-function gi() { curl -sL https://www.gitignore.io/api/$@ ;}
+function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 _gitignoreio_get_command_list() {
-  curl -sL https://www.gitignore.io/api/list | tr "," "\n"
+  curl -sL https://www.toptal.com/developers/gitignore/api/list | tr "," "\n"
 }
 
 _gitignoreio () {
@@ -85,7 +85,7 @@ complete -f -c git -n '__fish_git_using_command ignore' -a '(__fish_print_gitign
 
 function __fish_print_gitignore_list
 if ! set -q __FISH_PRINT_GITIGNORE_LIST
-   set -g __FISH_PRINT_GITIGNORE_LIST (curl -sL https://www.gitignore.io/api/list)
+   set -g __FISH_PRINT_GITIGNORE_LIST (curl -sL https://www.toptal.com/developers/gitignore/api/list)
 end
 echo $__FISH_PRINT_GITIGNORE_LIST | string split ","
 end
@@ -97,7 +97,7 @@ Improved git alias `tee` to `.gitignore` and accept multiple parameters
 
 ```bash
 git config --global alias.ignore \
-'!gi() { IFS=","; curl -L -s "https://www.gitignore.io/api/$*" | tee .gitignore;}; \
+'!gi() { IFS=","; curl -L -s "https://www.toptal.com/developers/gitignore/api/$*" | tee .gitignore;}; \
 gi'
 
 ```

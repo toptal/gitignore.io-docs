@@ -4,7 +4,7 @@ description: Open JSON API for integrating with gitignore.io
 
 # API
 
-{% api-method method="get" host="https://www.gitignore.io" path="/api/list?format=:format:" %}
+{% api-method method="get" host="https://www.toptal.com/developers/gitignore" path="/api/list?format=:format:" %}
 {% api-method-summary %}
 Get All Templates
 {% endapi-method-summary %}

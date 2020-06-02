@@ -13,7 +13,7 @@ description: >-
 
 ```bash
 git config --global alias.ignore \
-'!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi'
+'!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi'
 ```
 
 ### Linux
@@ -21,21 +21,21 @@ git config --global alias.ignore \
 #### Bash <a id="linux-bash"></a>
 
 ```bash
-echo "function gi() { curl -sL https://www.gitignore.io/api/\$@ ;}" >> \
+echo "function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
 ~/.bashrc && source ~/.bashrc
 ```
 
 #### Zsh <a id="linux-zsh"></a>
 
 ```bash
-echo "function gi() { curl -sLw "\n" https://www.gitignore.io/api/\$@ ;}" >> \
+echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
 ~/.zshrc && source ~/.zshrc
 ```
 
 #### Fish <a id="linux-fish"></a>
 
 ```bash
-printf "function gi\n\tcurl -sL https://www.gitignore.io/api/\$argv\nend\n" > \
+printf "function gi\n\tcurl -sL https://www.toptal.com/developers/gitignore/api/\$argv\nend\n" > \
 ~/.config/fish/functions/gi.fish
 ```
 
@@ -44,21 +44,21 @@ printf "function gi\n\tcurl -sL https://www.gitignore.io/api/\$argv\nend\n" > \
 #### Bash <a id="macos-bash"></a>
 
 ```bash
-echo "function gi() { curl -sL https://www.gitignore.io/api/\$@ ;}" >> \
+echo "function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
 ~/.bash_profile && source ~/.bash_profile
 ```
 
 #### Zsh <a id="masos-zsh"></a>
 
 ```bash
-echo "function gi() { curl -sLw "\n" https://www.gitignore.io/api/\$@ ;}" >> \
+echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
 ~/.zshrc && source ~/.zshrc
 ```
 
 #### Fish <a id="macos-fish"></a>
 
 ```bash
-printf "function gi\n\tcurl -sL https://www.gitignore.io/api/\$argv\nend\n" > \
+printf "function gi\n\tcurl -sL https://www.toptal.com/developers/gitignore/api/\$argv\nend\n" > \
 ~/.config/fish/functions/gi.fish
 ```
 
@@ -74,7 +74,7 @@ Function gig {
     [string[]]$list
   )
   $params = ($list | ForEach-Object { [uri]::EscapeDataString($_) }) -join ","
-  Invoke-WebRequest -Uri "https://www.gitignore.io/api/$params" | select -ExpandProperty content | Out-File -FilePath $(Join-Path -path $pwd -ChildPath ".gitignore") -Encoding ascii
+  Invoke-WebRequest -Uri "https://www.toptal.com/developers/gitignore/api/$params" | select -ExpandProperty content | Out-File -FilePath $(Join-Path -path $pwd -ChildPath ".gitignore") -Encoding ascii
 }
 ```
 
@@ -90,7 +90,7 @@ Function gig {
   $params = ($list | ForEach-Object { [uri]::EscapeDataString($_) }) -join ","
   $wc = New-Object System.Net.WebClient
   $wc.Headers["User-Agent"] = "PowerShell/" + $PSVersionTable["PSVersion"].ToString()
-  $wc.DownloadFile("https://www.gitignore.io/api/$params", "$PWD\.gitignore")
+  $wc.DownloadFile("https://www.toptal.com/developers/gitignore/api/$params", "$PWD\.gitignore")
 }
 ```
 
@@ -110,6 +110,6 @@ Create a Command Line Prompt Script If you have installed [msysgit](http://msysg
 @if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%
 @if not exist "%HOME%" @set HOME=%USERPROFILE%
 
-@curl.exe -L -s https://www.gitignore.io/api/%*
+@curl.exe -L -s https://www.toptal.com/developers/gitignore/api/%*
 ```
 
