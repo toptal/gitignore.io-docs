@@ -64,7 +64,7 @@ printf "function gi\n\tcurl -sL https://www.toptal.com/developers/gitignore/api/
 
 ### Windows
 
-Paste the following scripts inside your PowerShell profile \(run\``$profile` inside PowerShell to get the profile's location path\).
+Paste the following scripts inside your PowerShell profile \(run `$profile` inside PowerShell to get the profile's location path\).
 
 #### PowerShell v3 Script
 
