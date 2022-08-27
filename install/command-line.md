@@ -28,7 +28,7 @@ echo "function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/\
 #### Zsh <a id="linux-zsh"></a>
 
 ```bash
-echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
+print -r 'function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}' >> \
 ~/.zshrc && source ~/.zshrc
 ```
 
@@ -51,7 +51,7 @@ echo "function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/\
 #### Zsh <a id="masos-zsh"></a>
 
 ```bash
-echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
+print -r 'function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}' >> \
 ~/.zshrc && source ~/.zshrc
 ```
 
